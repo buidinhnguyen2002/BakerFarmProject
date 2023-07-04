@@ -14,16 +14,16 @@
     box-sizing: content-box;
     &-1{
         // background-image: linear-gradient(to top, rgba(231,157,60,0.95) 0%, rgba(231,157,60,0.95) 37.5%, transparent 37.5%),url(../../assets/image/dish\ 3.jpeg);
-        background-image: linear-gradient(to top, rgba(231,157,60,0.95) 0%, rgba(231,157,60,0.95) 37.5%, transparent 37.5%),url(/assets/image/dish\ 3.jpeg);
+        background-image: linear-gradient(to top, rgba(231,157,60,0.95) 0%, rgba(231,157,60,0.95) 37.5%, transparent 37.5%),url(./assets/image/dish\ 3.jpeg);
     }
     &-2{
         // background-image: linear-gradient(to top, rgba(233,48,79,0.95) 0%, rgba(233,48,79,0.95) 37.5%, transparent 37.5%),url(../../assets/image/dish\ 2.jpeg);
-        background-image: linear-gradient(to top, rgba(233,48,79,0.95) 0%, rgba(233,48,79,0.95) 37.5%, transparent 37.5%),url(/assets/image/dish\ 2.jpeg);
+        background-image: linear-gradient(to top, rgba(233,48,79,0.95) 0%, rgba(233,48,79,0.95) 37.5%, transparent 37.5%),url(./assets/image/dish\ 2.jpeg);
         margin-top: -8rem;
     }
     &-3{
         // background-image: linear-gradient(to top, rgba(20,218,96,0.95) 0%, rgba(20,218,96,0.95) 37.5%, transparent 37.5%),url(../../assets/image/dish\ 1.jpeg);
-        background-image: linear-gradient(to top, rgba(20,218,96,0.95) 0%, rgba(20,218,96,0.95) 37.5%, transparent 37.5%),url(/assets/image/dish\ 1.jpeg);
+        background-image: linear-gradient(to top, rgba(20,218,96,0.95) 0%, rgba(20,218,96,0.95) 37.5%, transparent 37.5%),url(./assets/image/dish\ 1.jpeg);
     }
     &_caption{
         text-transform: uppercase;
