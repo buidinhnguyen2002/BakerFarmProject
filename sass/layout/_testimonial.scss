@@ -1,0 +1,35 @@
+.testimonial-section{
+    // background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../../assets/image/wood_back.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/assets/image/wood_back.jpg);
+    height: 80rem;
+    background-size: cover;
+    background-position: center;
+    // @include flexMiddle;
+    .testimonial__wrapper{
+        height: 100%;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+        @include flexMiddle;
+        flex-direction: column;
+        .testimonial__detail {
+            @include flexMiddle;
+            flex-direction: column;
+            .personal__avatar{
+                height: 18rem;
+                border-radius: 50%;
+            }
+            i{
+                color: $colorGrey-01;
+                font-size: 3rem;
+                align-self: flex-start;
+                transform: rotateY(180deg);
+                margin-left: 11rem
+            }
+            .testimonial__description{
+                @include textStyle(1.7rem, 400, 1.6, $colorGrey-02);
+                text-align: center;
+                width: 75%;
+            }
+        }
+    }
+}

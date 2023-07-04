@@ -1,0 +1,19 @@
+.offer-section {
+    @include dimension(100%, 70rem);
+    // background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../../assets/image/offer-1.jpg);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/assets/image/offer-1.jpg);
+    background-position: center;
+    background-size: cover;
+    @include flexMiddle;
+    flex-direction: column;
+    background-attachment: fixed;
+    .offer-content {
+        @include textStyle(1.4rem, 400, 1.8, $colorWhite-01);
+        width: 75%;
+        margin-bottom: 2rem;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+        padding: 0 15px;
+    }
+}

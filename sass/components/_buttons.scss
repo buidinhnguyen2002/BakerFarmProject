@@ -1,0 +1,91 @@
+.btn-learn-more{
+    background-color: transparent;
+    color: $colorWhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    transition: all 0.8s;
+    background-image: linear-gradient(120deg, $colorWhite-01 0%, $colorWhite-01 50%, transparent 50%);
+    background-size: 450%;
+    background-position: -32rem;
+    &:hover {
+        background-position: 0;
+        color: $colorRed-01;
+    }
+}
+.btn-learn-more-2 {
+    text-decoration: none;
+    @include textStyle(1.6rem, 700, 1.5,$colorBlack-01);
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem;
+    border-bottom: 3px solid $colorOrange-01;
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-0.5rem);
+        color: $colorOrange-01;
+    }
+}
+.btn-learn-more-3{
+    border-radius: 0.4rem;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    transition: all 0.2s;
+    border: 1px solid $colorWhite-01;
+    color: $colorWhite-01;
+    &:hover {
+        background-color: $colorWhite;
+        color: $colorBlack-01;
+    }
+}
+.btn-learn-more-4 {
+    border-radius: 0.4rem;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    transition: all 0.2s;
+    border: 1px solid $colorBlack-01;
+    color: $colorBlack-01;
+    margin-top: 2rem;
+    display: inline-block;
+    &:hover{
+        color: $colorWhite;
+        background-color: $colorBlack-01;
+    }
+}
+.btn_video {
+    padding: 1.5rem 3rem;
+    border-radius: 50%;
+    background-color: $colorWhite-01;
+    font-size: 2.6rem;
+    color: #007bff;
+    @include positionAbsolute(unset, unset, -3rem, unset);
+    &:hover {
+        color: #0056b3;
+    }
+}
+.btn_event{
+    @include textStyle(1.6rem, 800, 1.5, $colorBlack-01);
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+        color: $colorOrange-01;
+        text-decoration: underline;
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    .btn-learn-more{
+        font-size: 2.5rem;
+        background-position: -55rem ;
+    }
+}
+@media only screen and (max-width: 28.125em) {
+    .btn_video{
+        padding: 0.8rem 1.5rem;
+        font-size: 1.5rem;
+        bottom: -2rem;
+    }
+}

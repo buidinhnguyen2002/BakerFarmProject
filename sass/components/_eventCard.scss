@@ -1,0 +1,40 @@
+.event__card{
+    display: flex;
+    width: calc( 50% - 2rem );
+    &--img{
+        height: 15rem;
+        margin-right: 2.3rem;
+    }
+    &--wrapper{
+        .event__card--header{
+            display: flex;
+            margin-bottom: 2.5rem;
+            .event__date{
+                @include flexMiddle;
+                flex-direction: column;
+                margin-right: 2.3rem;
+                &--day{
+                    @include textStyle(6.2rem, 700, 4.5rem, $colorRed-01);
+                    text-transform: uppercase;
+                    font-family: "Cookie", cursive;
+                }
+                &--month{
+                    color: $colorRed-01;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+            }
+            .event__title{
+                @include textStyle(1.5rem, 800, 1.5, $colorRed-01);
+                letter-spacing: 1px;
+                align-self: flex-end;
+                text-transform: uppercase;
+            }
+        }  
+        .event_detail{
+            font-size: 1.4rem;
+            color: $colorGrey-03;
+            margin-bottom: 3.5rem;
+        }
+    }
+}

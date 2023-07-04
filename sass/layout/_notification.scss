@@ -1,0 +1,68 @@
+.notification__container{
+    opacity: 0;
+    transition: 0.2s all linear;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    @include flexMiddle;
+    width: 100%;
+    .notification__box{
+        padding: 7rem;
+        background-color: $colorWhite;
+        border-radius: 1rem;
+        width: 70%;
+        @include flexMiddle;
+        flex-direction: column;
+        .heading_1{
+            color: $colorRed-01;
+            line-height: 6rem;
+            text-transform: none;
+        }
+        .heading_2{
+            font-weight: 800;
+            line-height: 3.2rem;
+            text-align: center;
+        }
+        .notification__btn{
+            margin-top: -0.5rem;
+            &-style{
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: $colorOrange-02;
+                color: $colorBlack-01;
+                padding: 1.2rem 2.5rem;
+                border-radius: 3px;
+                font-weight: 800;
+                transition: 0.2s all ;
+                box-shadow: 0 1rem 0.01rem rgba(0,0,0,0.05);
+                margin-right: 3rem;
+                &:hover{
+                    background-color: $colorBlack-01;
+                    color: $colorWhite;
+                }
+            }
+            .btn-learn-more-4{
+                padding: 0.8rem 2.5rem;
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    .notification__box{
+        width: 90% !important;
+    }
+    .notification__btn{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        .notification__btn-style{
+            margin-right: 0 !important;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

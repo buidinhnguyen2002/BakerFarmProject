@@ -1,0 +1,40 @@
+.product-section{
+    width: 80%;
+    margin: 3rem auto 0;
+    padding: 0 1.5rem;
+    .section-title {
+        text-align: center;
+        h2{
+            line-height: 3.2rem;
+        }
+        .sub_title{
+            @include textStyle(1.4rem, 400, 1.8, $colorBlack-02);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    .product__cards{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 62.5em) {
+    .product__cards{
+        flex-direction: column;
+        &--item{
+            width: 100%;
+            padding-bottom: 4rem;
+            &:not(:last-child){
+                border-bottom: 1px solid rgba(0,0,0,0.15);
+                margin-bottom: 6rem;
+            }
+        }
+    }
+    .product__img--box{
+        img{
+            height: 20vh !important;
+        }
+    }
+}

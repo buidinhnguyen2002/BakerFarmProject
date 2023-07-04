@@ -1,0 +1,28 @@
+.about-section {
+    width: 100%;
+    .about-section-wrapper {
+        margin: 3rem auto;
+        padding: 0 1.5rem 15rem 1.5rem;
+        width: 60%;
+        flex-direction: column;
+        @include flexMiddle;
+        .heading_2{
+            @include textStyle(2.5rem, 800 ,3.2rem, $colorBlack-01);
+            letter-spacing: 1.6px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .about-content{
+            @include textStyle(1.4rem, 400, 1.6, $colorBlack-02);
+            width: 75%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    .about-section-wrapper{
+        width: 80% !important;
+    }
+}

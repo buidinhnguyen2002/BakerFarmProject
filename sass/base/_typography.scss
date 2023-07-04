@@ -1,0 +1,28 @@
+.heading_1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    @include textStyle(8rem, 500, 5rem, $colorWhite-01);
+}
+.heading_2{
+    letter-spacing: 1.6px;
+    margin-bottom: 2rem;
+    @include textStyle(2.5rem, 400, 3rem, $colorWhite-01);
+    &--wrapper{
+        padding: 3rem 10rem;
+        border-bottom: 1px solid $colorGrey-opacity-06;
+        border-top: 1px solid $colorGrey-opacity-06;
+        text-align: center;
+        width: 80%;
+        line-height: 3rem;
+    }
+}
+.heading_1-fontRale {
+    font-family: "Raleway", sans-serif;
+}
+.heading_2--black{
+    color: $colorBlack-01;
+    font-weight: 800;
+}
